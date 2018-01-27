@@ -144,7 +144,7 @@
 
         <div class="col l7 s7 offset-s1 offset-l1">
           <h5 class="white-text center">More about Shaun Bens</h5>
-          <p class="grey-text text-lighten-4 center">I am ready for hire and open to remote, freelance, recruiter, and direct hire offers. To contact me directly, <button class="modal-trigger waves-effect btn waves-light grey darken-1" href="#contactMeModal"> you can find me here.</button></p>
+          <p class="grey-text text-lighten-4 center">I am ready for hire and open to remote, freelance, recruiter, and direct hire offers. To contact me directly, <button class="modal-trigger waves-effect btn waves-light grey darken-1" href="#contactMeModal"> &lt!--Email me--&gt</button></p>
         </div>
 
 
@@ -161,28 +161,29 @@
   <div id="contactMeModal" class="modal bottom-sheet">
     <div class="modal-content">
       <div class="form-container">
-        <h5>Contact Form</h5>
+        <h5 class="center">Send Me a Message!</h5>
         <div class="row">
-          <form class="col s12" id="reused_form">
+          <form class="col s12 m10 offset-m1" id="reused_form">
             <div class="row">
-              <div class="input-field col s12">
-                <input id="name" type="text" name="name" required class="validate">
-                <label for="name">Name</label>
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">account_circle</i>
+                <input required id="name" type="text" name="name" required class="validate">
+                <label for="name">Your Name</label>
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s12">
-                <input id="email" type="email" name="email" required class="validate">
-                <label for="email">Email</label>
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">email</i>
+                <input required id="email" type="email" name="email" required class="validate">
+                <label for="email">Your Email</label>
+              </div>
+              <div class="input-field col s12 m6">
+                <i class="material-icons prefix">text_fields</i>
+                <textarea required id="message" name="message" class="materialize-textarea" class="validate"></textarea>
+                <label for="message">Your Message</label>
               </div>
             </div>
-            <div class="row">
-              <div class="input-field col s12">
-                <textarea id="message" name="message" class="materialize-textarea" class="validate"></textarea>
-                <label for="message">Message</label>
-              </div>
-            </div>
-            <div>
+            <div class="center">
               <button class="waves-effect waves-light btn submitbtn" type="submit"><i class="material-icons">send</i> Send</button>
             </div>
           </form>
